@@ -29,7 +29,7 @@ It allows administrators and students to interact with academic information easi
 ![Login Page](images/login%20page.png)
 ## 🔒 SignUp Page:
 ![Sign Up Page](images/signUp%20page.png)
-## Dashboard Page:
+## 🏠 Dashboard Page:
 ![Dashboard](images/Dashboard.png)
 ## 👩‍🎓 Students Page:
 ![Students Page](images/Students%20Page.png)
