@@ -1,0 +1,9 @@
+634c8330-e5de-4ca6-9a50-618810c4eca8,Ahlam Abu diab,SD
+f5bacc97-a130-49a2-b099-050a058fe804,Adam Abed ,Counting
+0a327b51-afa4-4c27-8782-3b24b8b7f9ed,Ahmed Madi,Multimeadia
+6d895731-266f-4446-a2e9-436aa0a027e6,Nour Sameh,CS
+acf91a95-f224-44f7-a749-dd867b08c40e,Doaa Khalid,SD
+ff35674f-5139-4909-a094-92cad9ef2237,Rami Hadi ,CS
+7e1900b3-de92-444c-a89a-393c712efe54,Wael  Fehmi,Marketing
+bb0141aa-e623-4c43-bf5c-953d8b96511e,Ody Kallob,Designing
+192fcb20-fae0-4193-9d8f-277bfb52e7fa,Rama Madi,Computring

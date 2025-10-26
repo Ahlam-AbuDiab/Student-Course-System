@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mutlithread.EnrollmentController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="338.0" style="-fx-border-style: dashed; -fx-border-color: #0d24ba;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Welcome to Enrollment Page: " textFill="#b223bf">
+               <font>
+                  <Font name="Avenir Black Oblique" size="23.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="336.0" spacing="30.0">
+               <children>
+                  <Label fx:id="studentLabel" text=" Student :  " textFill="#67249a">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Avenir Heavy Oblique" size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="stdComboBox" prefHeight="26.0" prefWidth="163.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="336.0" spacing="45.0">
+               <children>
+                  <Label fx:id="courseLabel" text="Course :  " textFill="#67249a">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Avenir Heavy Oblique" size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="courseComboBox" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <DatePicker fx:id="datePicker" promptText="7/9/2025" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </DatePicker>
+            <HBox alignment="CENTER" prefHeight="127.0" prefWidth="336.0" spacing="50.0">
+               <children>
+                  <ToolBar prefHeight="95.0" prefWidth="330.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);">
+                    <items>
+                      <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButton" prefHeight="55.0" prefWidth="71.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);" text="Add" textFill="#b223bf">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                           <font>
+                              <Font name="Sinhala Sangam MN Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="refreshButton" layoutX="10.0" layoutY="25.0" mnemonicParsing="false" onAction="#refreshButton" prefHeight="55.0" prefWidth="71.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);" text="Refresh" textFill="#b223bf">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                           <font>
+                              <Font name="Sinhala Sangam MN Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="GenRemButton" layoutX="86.0" layoutY="25.0" mnemonicParsing="false" onAction="#reminaderButton" prefHeight="59.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);" text="GenRem" textFill="#b223bf">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                           <font>
+                              <Font name="Sinhala Sangam MN Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cancelButton" layoutX="86.0" layoutY="25.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="55.0" prefWidth="71.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);" text="Cancel" textFill="#b223bf">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                           <font>
+                              <Font name="Sinhala Sangam MN Bold" size="14.0" />
+                           </font>
+                        </Button>
+                    </items>
+                  </ToolBar>
+               </children>
+            </HBox>
+            <Label fx:id="status" prefHeight="17.0" prefWidth="111.0" text="Status:" textAlignment="CENTER" textFill="#67249a">
+               <font>
+                  <Font name="Avenir Next Condensed Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="sideOutPut" prefHeight="200.0" prefWidth="200.0" promptText="output">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#backButtonHandle" prefHeight="23.0" prefWidth="149.0" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);" text="👈Back to Dashboard">
+               <effect>
+                  <ColorAdjust>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </ColorAdjust>
+               </effect>
+               <HBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="systemLabel" alignment="CENTER" prefHeight="88.0" prefWidth="736.0" text="Academic System &lt;^_^&gt; " textAlignment="CENTER" textFill="#0d24ba">
+               <font>
+                  <Font name="Baloo Bhai 2 ExtraBold" size="44.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="49.0" prefWidth="533.0" spacing="10.0">
+               <children>
+                  <ProgressIndicator fx:id="progress" prefHeight="76.0" prefWidth="27.0" progress="0.0" />
+                  <ComboBox fx:id="dateComboBox" prefHeight="26.0" prefWidth="102.0" promptText="Sort By" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ComboBox>
+                  <TextField fx:id="searchField" prefHeight="26.0" prefWidth="131.0" promptText="✏️type here to search" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);" styleClass="transparent" stylesheets="@style.css">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </TextField>
+                  <DatePicker fx:id="searchDate" prefHeight="26.0" prefWidth="152.0" promptText="1/9/2025" style="-fx-background-color: linear-gradient(to bottom right, #89cff0, #e0f7ff);">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </DatePicker>
+                  <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonHandle" styleClass="search-button" stylesheets="@style.css" text="search">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="enrollTable" prefHeight="507.0" prefWidth="100.0" style="-fx-background-color: #e6e6fa;">
+              <columns>
+                <TableColumn fx:id="noCol" prefWidth="82.0" style="-fx-border-style: solid; -fx-background-color: #e6e6fa;" text="No" />
+                <TableColumn fx:id="studentCol" prefWidth="147.0" style="-fx-border-style: solid; -fx-background-color: #e6e6fa;" text="Student " />
+                  <TableColumn fx:id="courseCol" minWidth="0.0" prefWidth="169.0" style="-fx-border-style: solid; -fx-background-color: #e6e6fa;" text="Course" />
+                  <TableColumn fx:id="dateCol" prefWidth="143.5" style="-fx-border-style: solid; -fx-background-color: #e6e6fa;" text="Enrollmenet Date" />
+              </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

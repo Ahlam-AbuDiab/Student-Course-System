@@ -1,0 +1,8 @@
+2b4ffb16-d3b1-480f-a320-566f42e294ba,designing,2,CS
+db95c1e3-007c-4270-93d9-691f95a5651d,javaFX,2,SD
+c7502923-a74d-4758-91c4-be8d3ba7b3e8,programming,4,CS
+19bffdc8-8bf6-4cd0-8c33-82d48d3652e5,frontend course,4,IT
+dc6ad19a-5a32-43b3-8026-e3d01e839b9f,java ,3,Computing
+57c80533-d503-4b9c-b11b-c678a693f333,laravel,3,SD
+58bf6b83-a5c5-496d-a546-7b4c4028e74a,Marketing,3,Counting
+f1636992-d7b6-49ae-ba07-292c1444bfc8,backend course,4,IT

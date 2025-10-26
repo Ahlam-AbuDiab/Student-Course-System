@@ -1,0 +1,19 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 7, 2025, 1:41:16 PM
+    Author     : ahlamabudiab
+*/
+.search-box{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100px;
+}
+.transparent{
+    -fx-background-color:rgba(0,0,0,0);
+}
+.search-button{
+    -fx-background-color:  linear-gradient(to bottom right, #89cff0, #e0f7ff);
+    -fx-background-radius: 30px;
+}
